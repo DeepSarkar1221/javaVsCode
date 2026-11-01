@@ -27,9 +27,18 @@ public class ArrayOfObjects {
         students[2]=s3;
 
 
+        //Normal loop
         for(int i=0;i<students.length;i++){
             System.out.println(students[i].name+" has obtain :"+students[i].marks);
         }
+
+        System.out.println("\n");
+        System.out.println("In enhanced for loop----->");
+        for(Student s:students){
+            System.out.println(s.name+" has obtain :"+s.marks);
+        }
+
+
 
     }
 }
