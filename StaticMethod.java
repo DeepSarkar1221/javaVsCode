@@ -36,9 +36,6 @@ class Mobile{
     }
 
 
-
-
-
 }
 
 public class StaticMethod {
