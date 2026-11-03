@@ -4,6 +4,18 @@ class Mobile{
     String brand;
     int price;
     static String name;  // it is a static varible so the name is a one var that accessed by any obj
+
+    public void show(){
+        System.out.println(brand+" : "+price+" : "+name);
+    }
+
+    public static void show1(){
+        
+        System.out.println(name); // id:101
+    }
+    public static  void show2(Mobile obj){
+        System.out.println(obj.brand+" : "+obj.price+" : "+name); // id:100
+    }
 }
 
 public class StaticMethod {
@@ -19,8 +31,14 @@ public class StaticMethod {
         obj2.price=1300000;
         Mobile.name="Phone";
 
-        System.out.println(obj1.brand+" : "+obj1.price+" : "+obj1.name);
-        System.out.println(obj2.brand+" : "+obj2.price+" : "+obj2.name);
+        obj1.show();
+        obj2.show();
+
+        Mobile.show1(); //id:101
+
+        Mobile.show2(obj2); // id :100
+
+
 
 
     }    
