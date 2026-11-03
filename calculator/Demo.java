@@ -12,6 +12,13 @@ public class Demo {
         System.out.println(b);
 
 
+        MultilevelInheritance obj3=new MultilevelInheritance();
+        System.out.println(obj3.mod(19, 4));
+        System.out.println(obj3.add(4, 8));
+
+
+        
+
     }
     
 }
