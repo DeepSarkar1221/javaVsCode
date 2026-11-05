@@ -28,7 +28,7 @@ public class Demo {
 
         // =====Make a annonymous inner class======
         A obj1=new A(){
-            public void show(){
+            public void show(){ //the the method name is differnet that in the A . then we can't access bt the obj of class A
                 System.out.println("from annonymous classs");
             }
         };
